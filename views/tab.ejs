@@ -1,0 +1,20 @@
+<ion-tabs>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="/" id="tab-home" class="<%- ( path === '/' ) ? 'tab-selected' : '' %>">
+    <ion-icon name="home-outline"></ion-icon>
+    <ion-label>Home</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button id="btn-favoritos" tab="favoritos" class="<%- ( path === '/favoritos' ) ? 'tab-selected' : '' %>">
+    <ion-icon name="star-outline"></ion-icon>
+    <ion-label>Favoritos</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="yo"  id="btnUser" class="<%- ( path === '/yo' ) ? 'tab-selected' : '' %>">
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-label>yo</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
+
+</ion-tabs>

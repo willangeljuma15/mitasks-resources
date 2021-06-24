@@ -1,0 +1,67 @@
+<%- include('./header') %>
+
+<ion-app>
+  <ion-header>
+
+
+    <ion-toolbar color="primary">
+
+      <ion-buttons slot="start">
+        <ion-button id="create-back-button">
+          <ion-icon slot="icon-only"name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      <ion-title>Create</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6">
+          <ion-card>
+              <ion-card-header>
+                <ion-title>New Tasks</ion-title>
+              </ion-card-header>
+              <ion-card-body>
+                <ion-item>
+                  <ion-label position="floating">TasksName</ion-label>
+                  <ion-input id="input-reason"></ion-input>
+                </ion-item>
+
+                <div class="ion-margin-vertical ion-margin-horizontal">
+                  <ion-item>
+                    <ion-label position="floating">TasksDesc</ion-label>
+                    <ion-input step="0.01" id="input-amunt"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label position="floating">TasksCreador</ion-label>
+                    <ion-input id="input-reason"></ion-input>
+                  </ion-item>
+
+                  <ion-button id="btn-cancel" color="danger" fill="outline">
+                    <ion-icon slot="start" name="close-outline"></ion-icon>
+                    Clear</ion-button>
+                  <ion-button id="btn-confirm">
+                    <ion-icon slot="start" name="add-outline"></ion-icon>
+                    Add Tasks</ion-button>
+                </div>
+
+              </ion-card-body>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-list id="expense-list"></ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+
+<%- include('./footer') %>

@@ -1,0 +1,34 @@
+<%- include('./header') %>
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button id="create-back-button">
+        <ion-icon slot="icon-only"name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <ion-avatar>
+        <img src="/public/img/user.jpg">
+    </ion-avatar>
+    </ion-buttons>
+    <ion-title>Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar></ion-searchbar>
+  <ion-list>
+    <ion-item>
+      <ion-label>Task Mascota</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Task Pagina</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Task Escuela</ion-label>
+    </ion-item>
+  </ion-list>
+
+<%- include('./tab') %>
+<%- include('./footer') %>
